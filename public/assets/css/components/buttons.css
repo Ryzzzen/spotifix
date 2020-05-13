@@ -1,0 +1,81 @@
+button {
+	background-color: transparent;
+	font-weight: 600;
+
+	border: var(--color) solid 2px;
+	border-radius: 6px;
+
+	height: 8.5%;
+	color: var(--color);
+
+	font-family: 'BigNoodleTitling oblique', sans-serif !important;
+	font-size: x-large;
+
+	padding: 1% 0.5% 0.3% 0.5%;
+	margin: 1%;
+
+	cursor: pointer;
+
+  outline: none;
+}
+
+/* On différencie les boutons désactivés */
+button:disabled {
+  background: repeating-linear-gradient( 45deg, #ff0000, #ff0000 10px, #f1c40f14 10px, #f1c40f14 14px );
+  filter: brightness(0.7);
+  cursor: default;
+
+  animation: none !important;
+}
+
+/* On empêche les animations de se lancer sur les boutons désactivés ou les boutons on/off */
+button:not(.switch) {
+  animation: buttonHoverAnimationOut 1s;
+	animation-fill-mode: forwards;
+}
+
+button:not(.switch):hover:enabled {
+	animation: buttonHoverAnimationIn 1s;
+	animation-fill-mode: forwards;
+}
+
+button.large {
+	width: -webkit-fill-available;
+	padding-top: 3.1%;
+
+	font-size: xx-large;
+}
+
+div.button.group.large {
+  width: -webkit-fill-available;
+}
+
+div.button.group.large > button {
+  display: inline-block;
+
+  padding-top: 3.1%;
+  width: 48%;
+
+  font-size: xx-large;
+}
+
+div.button.group.large > button:last-child {
+  float: right;
+}
+
+button.yellow {
+	--color: #f1c40f;
+}
+
+button.red {
+	--color: crimson;
+}
+
+button.black {
+	--color: black;
+}
+
+button.shipsofficer {
+  --color: #2C3A47;
+  color: white;
+}

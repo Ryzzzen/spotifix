@@ -1,0 +1,27 @@
+{
+  "name": "spotifix",
+  "version": "1.0.0",
+  "description": "Renseigne des informations et permet de comparer avec les autres utilisateurs",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "echo no build"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Ryzzzen/spotifix.git"
+  },
+  "keywords": [
+    "spotify",
+    "data"
+  ],
+  "author": "Thomas Cardon",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Ryzzzen/spotifix/issues"
+  },
+  "homepage": "https://github.com/Ryzzzen/spotifix#readme",
+  "dependencies": {
+    "mime": "^2.4.4"
+  }
+}

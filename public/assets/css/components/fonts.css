@@ -1,0 +1,20 @@
+/*
+* Polices d'écritures appliquées à presque l'ensemble du site
+* Inspiré de la police Overwatch
+*/
+@font-face {
+	font-family: 'BigNoodleTitling';
+	font-style: normal;
+	font-weight: normal;
+	src: url('/assets/fonts/bignoodletitling.eot');
+	src: local('BigNoodleTitling'), url('/assets/fonts/bignoodletitling.woff') format('woff'), url('/assets/fonts/bignoodletitling.ttf') format('truetype');
+}
+
+
+@font-face {
+	font-family: 'BigNoodleTitling Oblique';
+	font-style: normal;
+	font-weight: normal;
+	src: local('BigNoodleTitling Oblique'), url('/assets/fonts/bignoodletitling-oblique-webfont.ttf') format('truetype');
+	src: local('BigNoodleTitling Oblique'), url('/assets/fonts/bignoodletitling-oblique-webfont.woff') format('woff');
+}

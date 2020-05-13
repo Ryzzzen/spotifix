@@ -1,0 +1,29 @@
+/*
+* Feuille de style qui gère les albums
+*/
+.album {
+	display: block;
+	position: relative;
+	margin-top: 2%;
+
+	font-family: 'BigNoodleTitling oblique', sans-serif !important;
+	font-size: -webkit-xxx-large;
+	color: #f1c40f;
+
+	outline-style: double;
+
+	background-position: center;
+	background-size: cover;
+}
+
+.artistName {
+  font-size: xx-large;
+}
+
+.album > .text-content > .popularity {
+  margin: 2% -5% 0 -5%;
+}
+
+.album > .text-content > ul {
+	font-size: medium;
+}

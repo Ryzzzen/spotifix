@@ -1,0 +1,78 @@
+/*
+* Sert à définir les points de cassure et à appliquer des pansements à ces points-là
+* Pour éviter que le site casse sur téléphone
+*/
+
+/* ----------- iPhone 5, 5S, SE ----------- */
+/* Portrait */
+@media only screen
+
+and (min-device-width: 320px)
+
+and (max-device-width: 375px)
+
+and (-webkit-min-device-pixel-ratio: 2)
+
+and (orientation: portrait) {
+  #text > button.large.yellow {
+    margin-top: 25% !important;
+  }
+}
+
+/* ----------- iPhone 5, 5S, SE, iPhone 6, 6S, 7 and 8 ----------- */
+/* Portrait */
+@media only screen
+
+and (min-device-width: 320px)
+
+and (max-device-width: 667px)
+
+and (-webkit-min-device-pixel-ratio: 2)
+
+and (orientation: portrait) {
+  nav {
+    display: none;
+  }
+
+  #spotify {
+    top: 0;
+  }
+
+  .track {
+    display: block;
+  }
+
+  h1 {
+    margin: 1%;
+  }
+
+  .subtitle {
+    margin-top: -10px !important;
+  }
+
+  #tracks > h1 {
+    margin-top: 15px;
+  }
+
+  #text > img {
+    display: block !important;
+    width: 20%;
+    margin: 10% 40%;
+  }
+
+  #text > button.large.yellow {
+    margin-top: 50%;
+  }
+}
+
+/* Landscape */
+
+@media only screen
+
+and (min-device-width: 375px)
+
+and (max-device-width: 667px)
+
+and (-webkit-min-device-pixel-ratio: 2)
+
+and (orientation: landscape) {}

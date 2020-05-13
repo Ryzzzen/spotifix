@@ -1,0 +1,54 @@
+/*
+* Feuille de style qui gère les chansons les plus écoutées
+*/
+#tracks > #grid {
+	display: table;
+
+	border-collapse: separate;
+  border-spacing: 25px;
+}
+
+.track {
+	display: table-cell;
+	width: 250px;
+	height: 250px;
+
+	position: relative;
+
+	font-family: 'BigNoodleTitling oblique', sans-serif !important;
+	color: #f1c40f;
+
+	outline-style: double;
+
+	background-position: center;
+	background-size: cover;
+}
+
+.track > .text-content > iframe {
+	position: absolute;
+	bottom: 0;
+	left: 0;
+}
+
+.track > .text-content > #desc {
+	font-size: x-large;
+}
+
+.track > .text-content > #desc > img {
+	width: 5%;
+	float: right;
+	padding-right: 5%;
+}
+
+.track > .text-content > #desc > img:hover {
+	cursor: pointer;
+}
+
+.track > .text-content > #fromAlbum {
+	font-family: 'PT Sans', sans-serif;
+	text-transform: uppercase;
+}
+
+.track > .text-content > #fromAlbum > #albumName {
+	font-family: 'BigNoodleTitling oblique', sans-serif !important;
+}

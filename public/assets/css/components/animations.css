@@ -1,0 +1,47 @@
+/*
+* button -> animation appliquées aux boutons
+* link -> appliquées aux liens
+* Hover (in) -> appliqué dès que la souris passe dessus
+* Hover (out) -> appliqué dès que la souris en ressort
+*/
+@keyframes buttonHoverAnimationIn {
+  from {
+    background-color: transparent;
+		color: var(--color);
+  }
+
+  to {
+    background-color: var(--color);
+		color: white;
+  }
+}
+
+@keyframes buttonHoverAnimationOut {
+  to {
+    background-color: transparent;
+		color: var(--color);
+  }
+
+  from {
+    background-color: var(--color);
+		color: white;
+  }
+}
+
+@keyframes linkHoverAnimationIn {
+	from {
+		color: #f3a683;
+	}
+	to {
+		color: #c44569;
+	}
+}
+
+@keyframes linkHoverAnimationOut {
+	to {
+		color: #f3a683;
+	}
+	from {
+		color: #c44569;
+	}
+}

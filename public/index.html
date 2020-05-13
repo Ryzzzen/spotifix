@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>Test</title>
+  <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+
+	<!-- Responsiveness -->
+	<meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	<meta name="HandheldFriendly" content="true">
+
+	<!-- Stylesheets -->
+	<link type="text/css" rel="stylesheet" href="/assets/css/stylesheet.css">
+	<link type="text/css" rel="stylesheet" href="/assets/css/spotify.css">
+	<link type="text/css" rel="stylesheet" href="/assets/css/components/buttons.css">
+	<link type="text/css" rel="stylesheet" href="/assets/css/components/albums.css">
+	<link type="text/css" rel="stylesheet" href="/assets/css/components/animations.css">
+	<link type="text/css" rel="stylesheet" href="/assets/css/components/fonts.css">
+	<link type="text/css" rel="stylesheet" href="/assets/css/components/tracks.css">
+	<link type="text/css" rel="stylesheet" href="/assets/css/components/mobile.css">
+	<!-- Police d'écriture PT Sans, utilisée juste pour la description des chansons -->
+	<link href="https://fonts.googleapis.com/css?family=PT+Sans&display=swap" rel="stylesheet">
+</head>
+
+<body>
+	<header>
+		<h2>Spotifix</h2>
+		<p>Cette page est un prototype utilisant les données de Spotify.
+			<br>
+			Connectez-vous afin d'obtenir des informations sur ce que vous écoutez.
+			La page n'est que partiellement supportée sur les téléphones.
+		</p>
+		<center><button class="red" id="btn-login" onclick="login()">Connexion à Spotify</button></center>
+	</header>
+	<nav>
+		<a>Page d'essai</a>
+		<a>Cette barre de navigation n'a plus aucune utilité</a>
+		<a>Page 2</a>
+		<a>Page 3</a>
+	</nav>
+	<div id="container">
+		<!-- Le contenu de ces éléments change dynamiquement avec les scripts -->
+		<div id="spotify" style="display: none;">
+			<div id="blur-content">
+				<div id="text">
+					<span id="profile-name"></span>
+					<span id="is-premium">Cet utilisateur est premium.</span>
+					<div class="button group large">
+						<button id="enableAnimations" class="switch shipsofficer">Effets</button>
+						<button class="yellow" disabled>Sauvegarder</button>
+					</div>
+					<button class="large black" onclick="sessionStorage.clear();window.location.href = window.location.href.substring(0, window.location.href.lastIndexOf('/') + 1);">Réinitialiser</button>
+					<img src="/assets/img/arrow.png" style="display: none;" />
+				</div>
+			</div>
+			<div id="content">
+				<center>
+					<p style="
+					    font-family: 'BigNoodleTitling oblique', sans-serif;
+					    font-size: x-large;
+					    color: #f1c40f;
+					">Voici les données récupérées de Spotify. L'indice de popularité donne un pourcentage par rapport à l'album ou l'artiste le plus écouté du pays dans lequel il opère.</p>
+					<h1>Les artistes que vous écoutez le plus</h1>
+					<h3 class="subtitle">Triées par le nombre d'écoutes</h3>
+					<div id="artists"></div>
+					<div id="tracks">
+						<h1>Les chansons que vous avez le plus écoutées</h1>
+						<h3 class="subtitle">Ces dernières années, sur ce compte</h3>
+						<div id="grid">
+						</div>
+					</div>
+					<div id="albums">
+						<h1>Les albums que vous avez le plus écoutées</h1>
+						<h3 class="subtitle">Les pistes jaunes sont celles que vous écoutez le plus.</h3>
+					</div>
+				</center>
+			</div>
+		</div>
+	</div>
+	<footer>
+	</footer>
+	<script type="text/javascript" src="/assets/js/spotify.js"></script>
+	<script type="text/javascript" src="/assets/js/components/ui/toggle.js"></script>
+	<script type="text/javascript" src="/assets/js/components/ui/user.js"></script>
+	<script type="text/javascript" src="/assets/js/components/ui/artists.js"></script>
+	<script type="text/javascript" src="/assets/js/components/ui/tracks.js"></script>
+	<script type="text/javascript" src="/assets/js/components/data.js"></script>
+	<script type="text/javascript" src="/assets/js/components/login.js"></script>
+</body>
+
+</html>
