@@ -1,5 +1,5 @@
 // Créé avec https://developer.spotify.com/dashboard/applications, constante à ne pas changer
-const CLIENT_ID = '[INSERT YOUR SPOTIFY CLIENT ID]';
+const CLIENT_ID = '965b9d210aaa429f8beb136d2ba53d54'; // Change the client ID, it won't work unless it's on spotifx.now.sh domain so you won't be able to use it
 
 /*
 * Cette fonction télécharge des données avec un endpoint Spotify donné
